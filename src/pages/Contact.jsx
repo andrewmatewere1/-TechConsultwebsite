@@ -143,9 +143,9 @@ const Contact = () => {
       {/* Contact Content */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
             {/* Contact Information */}
-            <div className="lg:col-span-1">
+            <div className="lg:col-span-1 space-y-8">
               <h2 className="text-2xl font-bold text-secondary-900 mb-6">
                 Contact Information
               </h2>
@@ -210,7 +210,7 @@ const Contact = () => {
                 </h2>
                 
                 <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-secondary-700 mb-2">
                         Name *
@@ -252,7 +252,7 @@ const Contact = () => {
                     </div>
                   </div>
 
-                  <div className="grid md:grid-cols-2 gap-6">
+                  <div className="grid sm:grid-cols-2 gap-4 sm:gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-secondary-700 mb-2">
                         Phone *

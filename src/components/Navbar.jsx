@@ -83,22 +83,22 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden mt-4 pb-4">
-            <div className="flex flex-col space-y-3">
+            <div className="flex flex-col space-y-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.href}
                   onClick={() => setIsOpen(false)}
-                  className={`px-3 py-2 rounded-lg transition-colors ${
+                  className={`px-4 py-3 rounded-lg transition-all duration-200 text-base font-medium ${
                     location.pathname === link.href
-                      ? 'bg-primary-100 text-primary-600'
-                      : isScrolled ? 'text-gray-700 hover:bg-gray-100' : 'text-white hover:bg-white/20'
+                      ? 'bg-primary-100 text-primary-600 border-l-4 border-primary-600'
+                      : isScrolled ? 'text-gray-700 hover:bg-gray-100 hover:translate-x-1' : 'text-white hover:bg-white/20 hover:translate-x-1'
                   }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <button className="btn-primary w-full">
+              <button className="btn-primary w-full mt-4 text-base py-3">
                 Get Started
               </button>
             </div>

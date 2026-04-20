@@ -51,7 +51,7 @@ const Projects = () => {
       {/* Projects Grid */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredProjects.map((project, index) => (
               <Card key={project.id} className="overflow-hidden group">
                 {/* Project Image */}
