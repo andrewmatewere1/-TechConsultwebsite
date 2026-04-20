@@ -42,7 +42,7 @@ const Contact = () => {
     
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone number is required';
-    } else if (!/^\+?[\d\s\-\(\)]+$/.test(formData.phone)) {
+    } else if (!/^\\+?[\\d\\s\\-\\(\\)]+$/.test(formData.phone)) {
       newErrors.phone = 'Please enter a valid phone number';
     }
     
@@ -189,15 +189,15 @@ const Contact = () => {
               <div className="mt-12">
                 <h3 className="font-semibold text-secondary-900 mb-4">Quick Links</h3>
                 <div className="space-y-2">
-                  <a href="#" className="block text-primary-600 hover:text-primary-700 transition-colors">
+                  <button className="block text-primary-600 hover:text-primary-700 transition-colors">
                     Schedule a Consultation
-                  </a>
-                  <a href="#" className="block text-primary-600 hover:text-primary-700 transition-colors">
+                  </button>
+                  <button className="block text-primary-600 hover:text-primary-700 transition-colors">
                     Request a Quote
-                  </a>
-                  <a href="#" className="block text-primary-600 hover:text-primary-700 transition-colors">
+                  </button>
+                  <button className="block text-primary-600 hover:text-primary-700 transition-colors">
                     Technical Support
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>
